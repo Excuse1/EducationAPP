@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#13c66e"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="14dp"
+            android:background="@mipmap/arrow_left" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_meassage"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="92dp"
+            android:layout_marginRight="100dp">
+
+        <ImageView
+            android:id="@+id/message_obtain"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="消息"
+            android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/phone_obtain"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="通讯录"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#13c66e"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="14dp"
+            android:background="@mipmap/arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="11dp"
+            android:text="订单"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+
+        <!-- 底部四个导航按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="待支付"
+                android:textColor="#000"
+
+                />
+
+            <Button
+                android:id="@+id/btn_two1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="待授课"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/btn_three"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="已结束"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/btn_four"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="全部订单"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+        <!-- 覆盖在导航按钮上的覆盖层，表示选中项 -->
+        <ImageView
+            android:id="@+id/imgv_overtab"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="#d65d5d" />
+    </RelativeLayout>
+    <!-- 导航和视图的分割线 -->
+
+
+    <!-- VIewPager 主要是加载内容的 -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

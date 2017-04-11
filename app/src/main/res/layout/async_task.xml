@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/async_task_im"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@mipmap/f_18"
+    android:scaleType="fitXY"/>
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="10"
+        android:id="@+id/progress_bar_async"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+</FrameLayout>

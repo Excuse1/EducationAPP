@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#50cc90">
+
+        <TextView
+            android:id="@+id/tv_content_timetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="8dp"
+            android:text="课表"
+            android:textColor="#fff"
+            android:textSize="23dp" />
+
+        <ImageView
+            android:id="@+id/iv_icon_timetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="11dp"
+            android:src="@mipmap/message_have" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <shengzheng.educationapp.CustomCalendar.CalendarView
+            android:id="@+id/calendarview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></shengzheng.educationapp.CustomCalendar.CalendarView>
+    </FrameLayout>
+</LinearLayout>

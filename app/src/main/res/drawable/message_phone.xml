@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <item android:state_checked="false" android:drawable="@drawable/dot1_w"></item>
+    <item android:state_checked="true" android:drawable="@mipmap/nav_me1"></item>-->
+<!--选中的时候-->
+    <item android:drawable="@drawable/dot1_w" android:state_selected="true"></item>
+    <item android:drawable="@drawable/dot2_w" android:state_selected="false"></item>
+    <!--窗口获得焦点时-->
+   <!-- <item android:state_window_focused="false" android:drawable="@color/colorAccent"></item>
+    &lt;!&ndash;聚焦的时候&ndash;&gt;
+    <item android:state_focused="true" android:drawable="@color/colorPrimary"></item>
+    &lt;!&ndash;按下的时候&ndash;&gt;
+    <item android:state_pressed="true" android:drawable="@color/colorPrimaryDark"></item>
+    &lt;!&ndash;默认&ndash;&gt;
+    <item android:drawable="@drawable/dot1_w"></item>-->
+
+    <!--设置是否相应事件-->
+    <!--<item android:state_enabled="true"></item>-->
+    </selector>
